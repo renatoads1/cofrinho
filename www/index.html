@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+    <!--
+  * Please see the included README.md file for license terms and conditions.
+  -->
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="icon-fonts/font-awesome-4.3.0/css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="icon-fonts/elusive-icons-2.0.0/css/elusive-icons.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" class="uib-framework-theme">
+        <meta charset="UTF-8">
+        <title>Blank App Designer Cordova Web App Project Template</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1, maximum-scale=2"> -->
+
+        <style>
+            /* following three (cascaded) are equivalent to above three meta viewport statements */
+            /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html */
+            /* see http://dev.w3.org/csswg/css-device-adapt/ */
+                @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+                @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+                /*@-ms-viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }   @viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }*/
+        </style>
+
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+        <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+
+        <script src="cordova.js" id="xdkJScordova_"></script>
+
+        <script src="js/app.js"></script>
+        <!-- for your event code, see README and file comments for details -->
+        <script src="js/init-app.js"></script>
+        <!-- for your init code, see README and file comments for details -->
+        <script src="xdk/init-dev.js"></script>
+        <!-- normalizes device and document ready events, see file for details -->
+        <script type="application/javascript" src="lib/jquery.min.js"></script>
+        <script type="application/javascript" src="sidebar/js/hammer.js"></script>
+        <script type="application/javascript" src="sidebar/js/jquery.hammer.js"></script>
+        <script type="application/javascript" src="sidebar/js/swipe-hammer.js"></script>
+        <script type="application/javascript" src="sidebar/js/sidebar.js"></script>
+        <script type="application/javascript" src="justgage/js/raphael.min.js"></script>
+        <script type="application/javascript" src="justgage/js/justgage.min.js"></script>
+        <script type="application/javascript" src="justgage/gauges.js"></script>
+        <script type="application/javascript" src="https://www.google.com/jsapi"></script>
+        <script type="application/javascript" src="chart/chart.js"></script>
+        <script type="application/javascript" src="marginal/marginal-position.min.js"></script>
+        <script type="application/javascript" src="js/index_user_scripts.js"></script>
+        <script type="application/javascript" src="xdk/ad/bs_subpage.js"></script>
+        <script type="application/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+        <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+        <script type="application/javascript" src="chartJS/chartJS.js"></script>
+        <!--google charts-->
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <!--fim google charts-->
+
+    </head>
+
+    <body>
+        <div class="upage" id="mainpage">
+            <div class="upage-outer">
+                <div class="uib-header header-bg container-group inner-element uib_w_1" data-uib="layout/header" data-ver="0">
+                    <h2></h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left">
+
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col right">
+                        <button class="btn widget uib_w_6 d-margins btn-sm btn-info" data-uib="twitter%20bootstrap/button" data-ver="1" id="logout"><i class="glyphicon glyphicon-ban-circle button-icon-left" data-position="left"></i> 
+                        </button>
+                    </div>
+                </div>
+                <div class="upage-content ac0 content-area vertical-col left" id="page_42_51">
+                    <div class="grid grid-pad urow uib_row_1 row-height-1" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_2 col-0_12-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <span class="uib_shim"></span>
+                    </div>
+
+                    <div class="grid grid-pad urow uib_row_2 row-height-2" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_3 col-0_12-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <div class="table-thing widget uib_w_3 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                                    <label class="narrow-control" for="tb_user"></label>
+                                    <input class="wide-control form-control default input-lg" type="email" placeholder="E-MAIL" id="tb_user" value="renatoads1@gmail.com">
+                                </div>
+                                <div class="table-thing widget uib_w_4 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                                    <label class="narrow-control" for="tb_senha"></label>
+                                    <input class="wide-control form-control default input-lg" type="password" placeholder="SENHA" id="tb_senha" value="r3n4t0321">
+                                </div>
+                                <button class="btn widget uib_w_5 d-margins btn-lg btn-primary" data-uib="twitter%20bootstrap/button" data-ver="1" id="btnb_entra_princ"><i class="glyphicon glyphicon-repeat button-icon-left" data-position="left"></i>ENTRAR</button>
+                                <button class="btn widget uib_w_17 d-margins btn-lg btn-info" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_cadastrar"><i class="glyphicon glyphicon-check button-icon-left" data-position="left"></i>CADASTRAR</button>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <span class="uib_shim"></span>
+                    </div>
+                </div>
+                <div class="uib-footer uib-footer-fixed footer-bg container-group inner-element uib_w_2" data-uib="layout/footer" data-ver="0">
+                    <h2></h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+                <div id="menuPrincipal" class="upage-content vertical-col left hidden">
+                    <div class="grid grid-pad urow uib_row_3 row-height-3" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_4 col-0_12-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <div class="panel-group no_wrap widget uib_w_7 d-margins" data-uib="twitter%20bootstrap/accordion" data-ver="1" id="bs-accordion-0">
+                                    <div class="panel widget uib_w_8 panel-primary" data-uib="twitter%20bootstrap/collapsible" data-ver="1" id="colapsMeusdados">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+           <a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-0" data-parent="#bs-accordion-0">MEUS DADOS</a>
+       </h4>
+                                        </div>
+                                        <div id="bs-accordion-group-0" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <div class="col uib_col_6 single-col" data-uib="layout/col" data-ver="0">
+                                                    <div class="widget-container content-area vertical-col">
+                                                        <div class="grid grid-pad urow uib_row_6 row-height-6" data-uib="layout/row" data-ver="0">
+                                                            <div class="col uib_col_19 col-0_12-12" data-uib="layout/col" data-ver="0">
+                                                                <div class="widget-container content-area vertical-col">
+                                                                    <div class="table-thing widget uib_w_18 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                                                                        <label class="narrow-control" for="tb_mb_pess_nome"></label>
+                                                                        <input class="wide-control form-control default input-lg" type="text" placeholder="NOME" id="tb_mb_pess_nome">
+                                                                    </div>
+                                                                    <div class="table-thing widget uib_w_19 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                                                                        <label class="narrow-control" for="tb_mb_pess_cpf"></label>
+                                                                        <input class="wide-control form-control default input-lg" type="number" placeholder="CPF" id="tb_mb_pess_cpf">
+                                                                    </div>
+                                                                    <div class="table-thing widget uib_w_20 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                                                                        <label class="narrow-control" for="tb_mb_pess_rg"></label>
+                                                                        <input class="wide-control form-control default input-lg" type="number" placeholder="RG" id="tb_mb_pess_rg">
+                                                                    </div>
+                                                                    <div class="table-thing widget uib_w_21 d-margins" data-uib="twitter%20bootstrap/select" data-ver="1">
+                                                                        <label class="narrow-control"></label>
+                                                                        <select class="wide-control form-control default input-lg" id="tb_mb_pess_est_civ">
+                                                                            <option>CASADO(A)</option>
+                                                                            <option>SOLTEIRO(A)</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="table-thing widget uib_w_22 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                                                                        <label class="narrow-control label-top-left" for="tb_mb_pess_dat_nasc">DATA DE NASCIMENTO</label>
+                                                                        <input class="wide-control form-control default input-lg" type="date" id="tb_mb_pess_dat_nasc">
+                                                                    </div>
+                                                                    <div class="table-thing widget uib_w_23 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                                                                        <label class="narrow-control label-top-left" for="tb_mb_pess_dat_cas">DATA DE CASAMENTO</label>
+                                                                        <input class="wide-control form-control default input-lg" type="date" id="tb_mb_pess_dat_cas">
+                                                                    </div>
+                                                                    <div class="table-thing widget uib_w_24 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                                                                        <label class="narrow-control" for="tb_mb_pess_profissao"></label>
+                                                                        <input class="wide-control form-control default input-lg" type="text" placeholder="PROFISSÃO" id="tb_mb_pess_profissao">
+                                                                    </div>
+                                                                    <div class="grid grid-pad urow uib_row_7 row-height-7" data-uib="layout/row" data-ver="0">
+                                                                        <div class="col uib_col_20 col-1_12-12" data-uib="layout/col" data-ver="0">
+                                                                            <div class="widget-container content-area vertical-col">
+                                                                                <span class="uib_shim"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <span class="uib_shim"></span>
+                                                                    </div>
+
+                                                                    <span class="uib_shim"></span>
+                                                                    <button class="btn widget uib_w_28 d-margins btn-lg btn-info" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_completa_cadastro"><i class="glyphicon glyphicon-ok button-icon-left" data-position="left"></i>COMPLETAR CADASTRO</button>
+                                                                </div>
+                                                            </div>
+                                                            <span class="uib_shim"></span>
+                                                        </div>
+                                                        <span class="uib_shim"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel widget uib_w_9 panel-primary" data-uib="twitter%20bootstrap/collapsible" data-ver="1" id="colapsPagar">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+           <a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-1" data-parent="#bs-accordion-0">A PAGARA</a>
+       </h4>
+                                        </div>
+                                        <div id="bs-accordion-group-1" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <div class="col uib_col_7 single-col" data-uib="layout/col" data-ver="0">
+                                                    <div class="widget-container content-area vertical-col">
+                                                        <div class="panel-group no_wrap widget uib_w_13 d-margins" data-uib="twitter%20bootstrap/accordion" data-ver="1" id="bs-accordion-2">
+                                                            <div class="panel widget uib_w_14 panel-primary" data-uib="twitter%20bootstrap/collapsible" data-ver="1" id="colapsNovadespesa">
+                                                                <div class="panel-heading">
+                                                                    <h4 class="panel-title">
+           <a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-6" data-parent="#bs-accordion-2">NOVA DESPESA</a>
+       </h4>
+                                                                </div>
+                                                                <div id="bs-accordion-group-6" class="panel-collapse collapse">
+                                                                    <div class="panel-body">
+                                                                        <div class="col uib_col_12 single-col" data-uib="layout/col" data-ver="0">
+                                                                            <div class="widget-container content-area vertical-col">
+                                                                                <div class="table-thing widget uib_w_45 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                                                                                    <label class="narrow-control" for="tb_mb_cont_a_pag_nome"></label>
+                                                                                    <input class="wide-control form-control default input-lg" type="text" placeholder="NOME DESPESA" id="tb_mb_cont_a_pag_nome">
+                                                                                </div>
+                                                                                <div class="table-thing widget uib_w_29 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                                                                                    <label class="narrow-control" for="tb_mb_cont_a_pag_desc"></label>
+                                                                                    <input class="wide-control form-control default input-lg" type="text" placeholder="DESCRIÇÃO" id="tb_mb_cont_a_pag_desc">
+                                                                                </div>
+                                                                                <div class="table-thing widget uib_w_30 d-margins" data-uib="twitter%20bootstrap/select" data-ver="1">
+                                                                                    <label class="narrow-control label-top-left">TIPO</label>
+                                                                                    <select class="wide-control form-control default input-lg" id="tb_mb_cont_a_pag_tipo_pag">
+                                                                                        <option>RESPONSABILIDADE</option>
+                                                                                        <option>LAZER</option>
+                                                                                        <option>POUPAR</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                                <div class="table-thing widget uib_w_42 d-margins" data-uib="twitter%20bootstrap/select" data-ver="1">
+                                                                                    <label class="narrow-control label-top-left">PARCELAS</label>
+                                                                                    <select class="wide-control form-control default input-lg" id="tb_mb_cont_a_pag_qnt_parcelas">
+                                                                                        <option>INFINITAS</option>
+                                                                                        <option>1</option>
+                                                                                        <option>2</option>
+                                                                                        <option>3</option>
+                                                                                        <option>4</option>
+                                                                                        <option>5</option>
+                                                                                        <option>6</option>
+                                                                                        <option>7</option>
+                                                                                        <option>8</option>
+                                                                                        <option>9</option>
+                                                                                        <option>10</option>
+                                                                                        <option>11</option>
+                                                                                        <option>12</option>
+                                                                                        <option>13</option>
+                                                                                        <option>14</option>
+                                                                                        <option>15</option>
+                                                                                        <option>16</option>
+                                                                                        <option>17</option>
+                                                                                        <option>18</option>
+                                                                                        <option>19</option>
+                                                                                        <option>20</option>
+                                                                                        <option>21</option>
+                                                                                        <option>22</option>
+                                                                                        <option>23</option>
+                                                                                        <option>24</option>
+                                                                                        <option>25</option>
+                                                                                        <option>26</option>
+                                                                                        <option>27</option>
+                                                                                        <option>28</option>
+                                                                                        <option>29</option>
+                                                                                        <option>30</option>
+                                                                                        <option>31</option>
+                                                                                        <option>32</option>
+                                                                                        <option>33</option>
+                                                                                        <option>34</option>
+                                                                                        <option>35</option>
+                                                                                        <option>36</option>
+                                                                                        <option>37</option>
+                                                                                        <option>38</option>
+                                                                                        <option>39</option>
+                                                                                        <option>40</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                                <div class="table-thing widget uib_w_32 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                                                                                    <label class="narrow-control" for="tb_valorPago"></label>
+                                                                                    <input class="wide-control form-control default input-lg" type="text" placeholder="valor pago" id="tb_valorPago">
+                                                                                </div>
+                                                                                <div class="table-thing widget uib_w_33 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                                                                                    <label class="narrow-control label-top-left" for="tb_mb_cont_a_pag_data_venc">DATA DE VENCIMENTO</label>
+                                                                                    <input class="wide-control form-control default input-lg" type="date" id="tb_mb_cont_a_pag_data_venc">
+                                                                                </div>
+
+                                                                                <button class="btn widget uib_w_36 d-margins btn-lg btn-info" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_salva_despesa"><i class="glyphicon glyphicon-ok button-icon-left" data-position="left"></i>SALVAR DESPESA</button>
+                                                                                <span class="uib_shim"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="panel-group no_wrap widget uib_w_43 d-margins" data-uib="twitter%20bootstrap/accordion" data-ver="1" id="bs-accordion-1">
+                                                            <div class="panel widget uib_w_44 panel-primary" data-uib="twitter%20bootstrap/collapsible" data-ver="1" id="colapsPagDesp">
+                                                                <div class="panel-heading" id="pgdespheder">
+
+                                                                    <h4 class="panel-title">
+           <a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-3" data-parent="#bs-accordion-1">PAGARA DESPESA</a>
+       </h4>	
+                                                                </div>
+                                                                <div id="bs-accordion-group-3" class="panel-collapse collapse">
+                                                                    <div class="panel-body">
+                                                                        <div class="col uib_col_21 single-col" data-uib="layout/col" data-ver="0">
+                                                                            <div class="widget-container content-area vertical-col" id="listacontapag">
+                                                                                <span class="uib_shim"></span>
+                                                                                <table class="table" id="listacontapagtb">
+
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <span class="uib_shim">
+                                                        
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel widget uib_w_10 panel-primary" data-uib="twitter%20bootstrap/collapsible" data-ver="1" id="colapscadReceber">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+           <a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-2" data-parent="#bs-accordion-0">A RECEBER</a>
+       </h4>
+                                        </div>
+                                        <div id="bs-accordion-group-2" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <div class="col uib_col_8 single-col" data-uib="layout/col" data-ver="0">
+                                                    <div class="widget-container content-area vertical-col">
+                                                        <div class="panel-group no_wrap widget uib_w_15 d-margins" data-uib="twitter%20bootstrap/accordion" data-ver="1" id="bs-accordion-3">
+                                                            <div class="panel widget uib_w_16 panel-primary" data-uib="twitter%20bootstrap/collapsible" data-ver="1" id="colapsNovareceita">
+                                                                <div class="panel-heading">
+                                                                    <h4 class="panel-title">
+           <a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-9" data-parent="#bs-accordion-3">NOVA RECEITA</a>
+       </h4>
+                                                                </div>
+                                                                <div id="bs-accordion-group-9" class="panel-collapse collapse">
+                                                                    <div class="panel-body">
+                                                                        <div class="col uib_col_15 single-col" data-uib="layout/col" data-ver="0">
+                                                                            <div class="widget-container content-area vertical-col">
+                                                                                <div class="table-thing widget uib_w_37 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                                                                                    <label class="narrow-control" for="tb_mb_cont_a_receb_nome"></label>
+                                                                                    <input class="wide-control form-control default input-lg" type="text" placeholder="NOME DA CONTA" id="tb_mb_cont_a_receb_nome">
+                                                                                </div>
+                                                                                <div class="table-thing widget uib_w_38 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                                                                                    <label class="narrow-control" for="tb_mb_cont_a_receb_descri"></label>
+                                                                                    <input class="wide-control form-control default input-lg" type="text" placeholder="DESCRIÇÃO" id="tb_mb_cont_a_receb_descri">
+                                                                                </div>
+                                                                                <div class="table-thing widget uib_w_39 d-margins" data-uib="twitter%20bootstrap/select" data-ver="1">
+                                                                                    <label class="narrow-control label-top-left">PARCELAS</label>
+                                                                                    <select class="wide-control form-control default input-lg" id="tb_mb_cont_a_receb_parcelas">
+                                                                                        <option>INFINITAS</option>
+                                                                                        <option>1</option>
+                                                                                        <option>2</option>
+                                                                                        <option>3</option>
+                                                                                        <option>4</option>
+                                                                                        <option>5</option>
+                                                                                        <option>6</option>
+                                                                                        <option>7</option>
+                                                                                        <option>8</option>
+                                                                                        <option>9</option>
+                                                                                        <option>10</option>
+                                                                                        <option>11</option>
+                                                                                        <option>12</option>
+                                                                                        <option>13</option>
+                                                                                        <option>14</option>
+                                                                                        <option>15</option>
+                                                                                        <option>16</option>
+                                                                                        <option>17</option>
+                                                                                        <option>18</option>
+                                                                                        <option>19</option>
+                                                                                        <option>20</option>
+                                                                                        <option>21</option>
+                                                                                        <option>22</option>
+                                                                                        <option>23</option>
+                                                                                        <option>24</option>
+                                                                                        <option>25</option>
+                                                                                        <option>26</option>
+                                                                                        <option>27</option>
+                                                                                        <option>28</option>
+                                                                                        <option>29</option>
+                                                                                        <option>30</option>
+                                                                                        <option>31</option>
+                                                                                        <option>32</option>
+                                                                                        <option>33</option>
+                                                                                        <option>34</option>
+                                                                                        <option>35</option>
+                                                                                        <option>36</option>
+                                                                                        <option>37</option>
+                                                                                        <option>38</option>
+                                                                                        <option>39</option>
+                                                                                        <option>40</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                                <div class="table-thing widget uib_w_40 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                                                                                    <label class="narrow-control" for="tb_mb_cont_a_receb_valor"></label>
+                                                                                    <input class="wide-control form-control default input-lg" type="text" placeholder="VALOR" id="tb_mb_cont_a_receb_valor">
+                                                                                </div>
+                                                                                <div class="table-thing widget uib_w_46 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                                                                                    <label class="narrow-control label-top-left" for="tb_mb_cont_a_receb_data">DATA DO RECEBIMENTO</label>
+                                                                                    <input class="wide-control form-control default" type="date" id="tb_mb_cont_a_receb_data">
+                                                                                </div>
+                                                                                <button class="btn widget uib_w_41 d-margins btn-lg btn-info" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_grava_recebmento"><i class="glyphicon glyphicon-ok button-icon-left" data-position="left"></i>GRAVAR RECEBIMENTO</button>
+                                                                                <span class="uib_shim"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <span class="uib_shim"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <span class="uib_shim"></span>
+                    </div>
+
+                    <!--inicio grafico-->
+                    <div clas="col-lg-12" id="donutchart" style="width: 1224px; height:750px;"></div>
+                    <!--fim grafico-->
+                </div>
+                <div id="pg_cadastrar" class="upage-content vertical-col left hidden">
+                    <div class="grid grid-pad urow uib_row_5 row-height-5" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_18 col-0_12-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <div class="table-thing widget uib_w_25 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                                    <label class="narrow-control label-top-left" for="tb_cad_user">*</label>
+                                    <input class="wide-control form-control default input-lg" type="email" placeholder="EMAIL" id="tb_cad_user">
+                                </div>
+                                <div class="table-thing widget uib_w_26 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                                    <label class="narrow-control label-top-left" for="tb_cad_senha">*</label>
+                                    <input class="wide-control form-control default input-lg" type="password" placeholder="SENHA" id="tb_cad_senha">
+                                </div>
+                                <button class="btn widget uib_w_27 d-margins btn-lg btn-info" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn_gravauser"><i class="fa fa-save button-icon-left" data-position="left"></i>GUARDAR</button>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <span class="uib_shim"></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
